@@ -1,0 +1,46 @@
+body {
+background:gray;
+  overflow: scrool; /* Para esconder o overflow da animação */
+}
+h2{
+margin:0 auto;
+text-align:center;
+color: green;
+text-shadow:0 0 7px black;
+}
+
+.car {
+  margin-top:10px;
+  width: 200px;
+  height: 100px;
+  background-color: ; /* Cor do carro */
+  position: absolute;
+  top: 10%; /* Centralizar verticalmente */
+  left: -100px; /* Iniciar fora da tela no lado esquerdo */
+  animation: moveCar 12s linear infinite; /* Chamar a animação */
+}
+
+@keyframes moveCar {
+  0% {
+    transform: translateX(-100px); /* Posição inicial fora da tela no lado esquerdo */
+  }
+  100% {
+    transform: translateX(calc(100vw + 100px)); /* Mover para fora da tela no lado direito */
+  }
+}
+
+.horario{
+margin-top:80px;
+text-align:center;
+
+}
+.img{
+width:95%;
+height:500px
+
+
+}
+footer{
+text-align:center;
+text-shadow:0 0 7px red;
+}
